@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import BirthdayButton from "../BirthdayButton";
+import video1 from "@/assets/video-1.mp4";
+
 
 interface VideoSectionProps {
   onContinue: () => void;
@@ -27,11 +29,14 @@ const VideoSection = ({ onContinue }: VideoSectionProps) => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.3 }}
       >
-        <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-primary/20 to-accent/20">
-          <div className="text-6xl mb-4 animate-pulse">🎬</div>
-          <p className="font-body text-foreground text-lg">Your special video</p>
-          <p className="font-body text-muted-foreground text-sm mt-2">(Add your video here)</p>
-        </div>
+       <video
+          src={video1}
+          autoPlay
+          loop
+          playsInline
+          controls
+          className="w-full h-full object-cover"
+        />
         
         {/* Floating hearts overlay */}
         <div className="absolute inset-0 pointer-events-none">
