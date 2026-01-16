@@ -19,7 +19,7 @@ const GreetingSection = ({ onContinue }: GreetingSectionProps) => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.2, type: "spring" }}
       >
-        HAPPY BIRTHDAY BABY 💕
+        HAPPY BIRTHDAY PAPA 💕
       </motion.h1>
 
       <motion.p
